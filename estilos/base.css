@@ -16,14 +16,14 @@ header {
     text-align: center;
 }
 
-header h1 {
-    padding: 20px;
-}
-
-header span {
+#course-title {
     display: block;
-    margin-top: 5px;
-    font-size: 18px;
+    background-color: #2E5EAA;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 .navigation {
