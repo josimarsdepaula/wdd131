@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f2f2f2;
+    color: #333333;
+}
+
+header {
+    background-color: #2E5EAA;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    padding: 20px;
+}
+
+header span {
+    display: block;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    background-color: #1F1F1F;
+}
+
+.navigation li {
+    flex: 1;
+}
+
+.navigation a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+}
+
+.navigation a:hover {
+    background-color: #4F81BD;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+main h1 {
+    grid-column: 1 / 3;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #999999;
+}
+
+.card h2 {
+    background-color: #2E5EAA;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px;
+}
+
+.about p {
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.about img {
+    width: 180px;
+    margin: auto;
+}
+
+.card h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.city {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    padding: 20px;
+}
+
+.city figure {
+    text-align: center;
+}
+
+.city img {
+    width: 120px;
+}
+
+.city figcaption {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.city p {
+    text-align: justify;
+}
+
+.card ul {
+    padding: 30px;
+}
+
+.card li {
+    margin-bottom: 12px;
+}
+
+.card a {
+    color: #2E5EAA;
+}
+
+footer {
+    background-color: #2E5EAA;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+#ultimaModificacao {
+    color: #FFD966;
+}

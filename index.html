@@ -4,12 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Fundamentos da Web Dinâmica - Josimar de Paula</title>
+    <meta name="description"
+        content="WDD 131 - Fundamentos da Web Dinâmica - Josimar de Paula - Página inicial do curso contendo informações pessoais e recursos para desenvolvimento web.">
+    <meta name="author" content="Josimar de Paula">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos/base.css">
-    <title>Document</title>
+    <script src="script/obterdatas.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <h1>
+            WDD 131: Fundamentos da Web Dinâmica - Josimar de Paula
+        </h1>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://www.linkedin.com/in/josimarsdepaula/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=por&id=p37#p37"
+                        target="_blank">Escritura</a></li>
+                <li><a href="project/index.html"">Projeto Final</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <h1>Josimar de Paula</h1>
+
+        <section class=" card">
+                        <h2>Sobre Mim</h2>
+
+                        <div class="about">
+                            <div>
+                                <p>
+                                    Meu nome é Josimar de Paula. Moro em Curitiba, Paraná, Brasil. Trabalho como
+                                    Engagement Manager
+                                    e estudo Desenvolvimento de Software pela BYU-Idaho. Gosto de tecnologia,
+                                    programação,
+                                    inteligência artificial e desenvolvimento web.
+                                </p>
+                            </div>
+
+                            <img src="imagens/perfil.jpg" alt="Foto de Josimar de Paula">
+                        </div>
+
+                        <h3>Curitiba, Paraná</h3>
+
+                        <div class="city">
+                            <figure>
+                                <img src="imagens/bandeira-parana.png" alt="Bandeira do Paraná">
+                                <figcaption>Bandeira do Paraná</figcaption>
+                            </figure>
+
+                            <p>
+                                Curitiba é a capital do Paraná e é conhecida pelo transporte público, parques e
+                                qualidade de vida.
+                                Também é considerada uma das cidades mais sustentáveis do Brasil.
+                            </p>
+                        </div>
+                        </section>
+
+                        <section class="card">
+                            <h2>Recursos Web Dev</h2>
+
+                            <ul>
+                                <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                                <li><a href="https://codepen.io/" target="_blank">CodePen</a></li>
+                                <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li>
+                            </ul>
+                        </section>
+                        </main>
+
+                        <footer>
+                            <p>&copy; <span id="anoatual"></span> Josimar de Paula - Paraná, Brasil</p>
+                            <p id="ultimaModificacao"></p>
+                        </footer>
 </body>
 
 </html>
