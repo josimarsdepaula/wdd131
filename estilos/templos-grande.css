@@ -1,4 +1,4 @@
-@media screen and (min-width:700px) {
+@media screen and (min-width: 700px) {
 
     #menu {
         display: none;
@@ -13,9 +13,15 @@
     .navigation {
         display: flex;
         flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
         gap: 2rem;
         width: auto;
-        margin-top: 0;
+    }
+
+    .navigation a {
+        display: block;
+        padding: .5rem;
     }
 
     .gallery {

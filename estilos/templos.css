@@ -5,17 +5,18 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 header {
-    background: #4B1473;
+    background-color: #4B1473;
     color: white;
     padding: 1rem;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #menu {
@@ -34,11 +35,14 @@ header {
     content: "✖";
 }
 
-.navigation {
-    display: none;
+nav {
+    display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 1rem;
+}
+
+.navigation {
+    display: none;
 }
 
 .navigation.open {
@@ -48,11 +52,13 @@ header {
 .navigation a {
     color: white;
     text-decoration: none;
-    padding: .8rem;
+    text-align: center;
+    padding: 1rem;
+    transition: background-color .3s;
 }
 
 .navigation a:hover {
-    background: white;
+    background-color: white;
     color: #4B1473;
 }
 
@@ -64,8 +70,8 @@ main {
 
 main h2 {
     text-align: center;
+    font-size: 2.3rem;
     margin-bottom: 2rem;
-    font-size: 2rem;
 }
 
 .gallery {
@@ -80,18 +86,23 @@ figure {
 
 figure img {
     width: 100%;
+    height: auto;
     display: block;
 }
 
 figcaption {
-    color: #4B1473;
-    font-size: 1.4rem;
     margin-top: .5rem;
+    color: #4B1473;
+    font-size: 1.3rem;
 }
 
 footer {
-    background: #4B1473;
+    background-color: #4B1473;
     color: white;
     text-align: center;
     padding: 1rem;
+}
+
+footer p {
+    margin: .3rem 0;
 }
