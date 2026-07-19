@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Josimar dos Santos Paula">
+    <meta name="description" content="Conheça Machu Picchu, um dos destinos turísticos mais famosos do Peru.">
+    <title>Peru | Machu Picchu</title>
+    <link rel="stylesheet" href="estilos/local.css">
+    <link rel="stylesheet" href="estilos/local-grande.css">
+    <script src="scripts/local.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Peru - Machu Picchu</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width:768px)" srcset="imagens/machu-picchu-large.jpg" sizes="100vw">
+                <img src="imagens/machu-picchu-small.jpg" alt="Vista panorâmica da cidadela de Machu Picchu, no Peru"
+                    loading="lazy">
+            </picture>
+        </section>
+
+        <section class="informacoes">
+            <article class="dados">
+                <h2>Dados</h2>
+                <p><strong>Capital:</strong> Lima</p>
+                <p><strong>População:</strong> Aproximadamente 34 milhões</p>
+                <p><strong>Área:</strong> 1.285.216 km²</p>
+                <p><strong>Idioma:</strong> Espanhol</p>
+                <p><strong>Moeda:</strong> Sol Peruano (PEN)</p>
+                <p><strong>Ponto Turístico:</strong> Machu Picchu</p>
+            </article>
+
+            <article class="clima">
+                <h2>Clima</h2>
+                <img src="imagens/weather.svg" alt="Weather icon" class="icone-clima">
+                <p><strong>Temperatura:</strong> <span id="temperatura">8°C</span></p>
+                <p><strong>Condições:</strong> Parcialmente Nublado</p>
+                <p><strong>Velocidade do Vento:</strong> <span id="vento">12 km/h</span></p>
+                <p><strong>Sensação Térmica:</strong> <span id="sensacao"></span></p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="ano"></span> | Josimar dos Santos Paula | Brasil</p>
+        <p>Última Modificação: <span id="ultimaModificacao"></span></p>
+    </footer>
+</body>
+
+</html>
