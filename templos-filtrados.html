@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Templos Filtrados</title>
+    <meta name="description" content="Galeria de templos com opções de filtro.">
+    <meta name="author" content="Josimar dos Santos Paula">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/templos-filtrados.css">
+    <link rel="stylesheet" href="estilos/templos-filtrados-grande.css">
+    <script src="scripts/templos-filtrados.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Álbum do Templo</h1>
+        <button id="menu" aria-label="Abrir menu"></button>
+        <nav class="navigation">
+            <a href="#" data-filter="inicio">Página Inicial</a>
+            <a href="#" data-filter="antigo">Antigo</a>
+            <a href="#" data-filter="novo">Novo</a>
+            <a href="#" data-filter="grande">Grande</a>
+            <a href="#" data-filter="pequeno">Pequeno</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Página Inicial</h2>
+        <div class="gallery"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> Josimar de Paula - Paraná, Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header, footer {
+    background-color: #4b1473;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#menu {
+    border: 0;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+#menu::before { content: "☰"; }
+#menu.open::before { content: "✖"; }
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navigation.open { display: flex; }
+
+.navigation a {
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: white;
+    color: #4b1473;
+}
+
+main {
+    margin: 2rem auto;
+    max-width: 1100px;
+    padding: 0 1rem;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+}
+
+.temple-card {
+    background-color: #f4f1f6;
+    padding: 1rem;
+    text-align: center;
+}
+
+.temple-card h3 { color: #4b1473; margin-bottom: .75rem; }
+.temple-card p { margin: .4rem 0; }
+
+.temple-card img {
+    display: block;
+    height: auto;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p { margin: .3rem; }
