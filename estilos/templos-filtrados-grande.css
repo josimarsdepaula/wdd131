@@ -1,7 +1,7 @@
 @media screen and (min-width: 768px) {
     #menu { display: none; }
 
-    .navigation {
+    nav.navigation {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;

@@ -32,13 +32,19 @@ header {
 #menu::before { content: "☰"; }
 #menu.open::before { content: "✖"; }
 
-.navigation {
-    display: none;
+nav.navigation {
+    display: flex;
     flex-direction: column;
     width: 100%;
 }
 
 .navigation.open { display: flex; }
+
+@media screen and (max-width: 767px) {
+    nav.navigation {
+        display: none;
+    }
+}
 
 .navigation a {
     color: white;
