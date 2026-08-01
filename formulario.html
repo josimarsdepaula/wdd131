@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Josimar dos Santos Paula">
-    <meta name="description" content="Formulário de avaliação de produtos.">
+    <meta name="description"
+        content="Formulário para avaliação de produtos, permitindo registrar classificação, recursos úteis, comentários e informações do usuário.">
     <title>Formulário de Avaliação de Produto</title>
     <link rel="stylesheet" href="estilos/formulario.css">
     <link rel="stylesheet" href="estilos/formulario-grande.css">
@@ -21,7 +22,7 @@
             <div class="campo">
                 <label for="produto">Nome do Produto *</label>
                 <select id="produto" name="produto" required>
-                    <option value="" selected disabled>Selecione um Produto...</option>
+                    <option value="" disabled selected>Selecione um produto...</option>
                 </select>
             </div>
             <div class="campo">
@@ -31,19 +32,19 @@
                     ☆ 1
                 </label>
                 <label for="estrela2">
-                    <input type="radio" id="estrela2" name="classificacao" value="2">
+                    <input type="radio" id="estrela2" name="classificacao" value="2" required>
                     ☆ 2
                 </label>
                 <label for="estrela3">
-                    <input type="radio" id="estrela3" name="classificacao" value="3">
+                    <input type="radio" id="estrela3" name="classificacao" value="3" required>
                     ☆ 3
                 </label>
                 <label for="estrela4">
-                    <input type="radio" id="estrela4" name="classificacao" value="4">
+                    <input type="radio" id="estrela4" name="classificacao" value="4" required>
                     ☆ 4
                 </label>
                 <label for="estrela5">
-                    <input type="radio" id="estrela5" name="classificacao" value="5">
+                    <input type="radio" id="estrela5" name="classificacao" value="5" required>
                     ☆ 5
                 </label>
             </div>
@@ -79,7 +80,7 @@
                 <input type="text" id="usuario" name="usuario">
             </div>
             <div class="campo">
-                <input type="submit" value="Enviar Avaliação">
+                <input type="submit" value="Enviar Avaliação do Produto">
             </div>
         </form>
     </main>

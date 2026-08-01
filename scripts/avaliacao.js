@@ -1,12 +1,10 @@
-const contador = document.querySelector("#contador");
+let contador = Number(localStorage.getItem("contadorAvaliacoes")) || 0;
 
-let totalAvaliacoes = Number(localStorage.getItem("avaliacoes")) || 0;
+contador++;
 
-totalAvaliacoes++;
+localStorage.setItem("contadorAvaliacoes", contador);
 
-localStorage.setItem("avaliacoes", totalAvaliacoes);
-
-contador.textContent = totalAvaliacoes;
+document.querySelector("#contador").textContent = contador;
 
 document.querySelector("#ano").textContent = new Date().getFullYear();
 
