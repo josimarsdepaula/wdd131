@@ -28,6 +28,10 @@ header {
     padding: 1.5rem;
 }
 
+header h1 {
+    font-size: 2rem;
+}
+
 main {
     max-width: 700px;
     margin: 2rem auto;
@@ -36,10 +40,10 @@ main {
 
 form {
     background: var(--cor-secundaria);
-    padding: 1.5rem;
     border: 1px solid var(--cor-borda);
     border-radius: 8px;
     box-shadow: 0 2px 8px var(--cor-sombra);
+    padding: 1.5rem;
 }
 
 .campo {
@@ -48,24 +52,25 @@ form {
 
 fieldset {
     border: 1px solid var(--cor-borda);
-    border-radius: 5px;
+    border-radius: 6px;
     padding: 1rem;
 }
 
 legend {
-    padding: 0 .5rem;
     font-weight: bold;
+    padding: 0 .5rem;
 }
 
 label {
     display: block;
-    margin-bottom: .5rem;
     font-weight: bold;
+    margin-bottom: .5rem;
 }
 
 fieldset label {
     font-weight: normal;
     margin: .4rem 0;
+    cursor: pointer;
 }
 
 select,
@@ -117,17 +122,17 @@ input[type="submit"]:hover {
     background: var(--cor-secundaria);
     padding: 2rem;
     border-radius: 8px;
-    text-align: center;
     box-shadow: 0 2px 8px var(--cor-sombra);
+    text-align: center;
 }
 
 .confirmacao h2 {
-    margin-bottom: 1rem;
     color: var(--cor-primaria);
+    margin-bottom: 1rem;
 }
 
 .confirmacao p {
-    margin: .75rem 0;
+    margin: .8rem 0;
 }
 
 .confirmacao a {
