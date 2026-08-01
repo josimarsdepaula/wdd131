@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Josimar dos Santos Paula">
+    <meta name="description" content="Formulário de avaliação de produtos.">
+    <title>Formulário de Avaliação de Produto</title>
+    <link rel="stylesheet" href="estilos/formulario.css">
+    <link rel="stylesheet" href="estilos/formulario-grande.css">
+    <script src="scripts/formulario.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Formulário de Avaliação de Produto</h1>
+    </header>
+    <main>
+        <form method="get" action="avaliacao.html">
+            <div class="campo">
+                <label for="produto">Nome do Produto *</label>
+                <select id="produto" name="produto" required>
+                    <option value="" selected disabled>Selecione um Produto...</option>
+                </select>
+            </div>
+            <div class="campo">
+                <p>Classificação Geral *</p>
+                <label for="estrela1">
+                    <input type="radio" id="estrela1" name="classificacao" value="1" required>
+                    ☆ 1
+                </label>
+                <label for="estrela2">
+                    <input type="radio" id="estrela2" name="classificacao" value="2">
+                    ☆ 2
+                </label>
+                <label for="estrela3">
+                    <input type="radio" id="estrela3" name="classificacao" value="3">
+                    ☆ 3
+                </label>
+                <label for="estrela4">
+                    <input type="radio" id="estrela4" name="classificacao" value="4">
+                    ☆ 4
+                </label>
+                <label for="estrela5">
+                    <input type="radio" id="estrela5" name="classificacao" value="5">
+                    ☆ 5
+                </label>
+            </div>
+            <div class="campo">
+                <label for="data">Data de Instalação *</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <div class="campo">
+                <p>Recursos Úteis</p>
+                <label for="durabilidade">
+                    <input type="checkbox" id="durabilidade" name="recursos" value="Durabilidade">
+                    Durabilidade
+                </label>
+                <label for="facilidade">
+                    <input type="checkbox" id="facilidade" name="recursos" value="Facilidade de Uso">
+                    Facilidade de Uso
+                </label>
+                <label for="desempenho">
+                    <input type="checkbox" id="desempenho" name="recursos" value="Desempenho">
+                    Desempenho
+                </label>
+                <label for="design">
+                    <input type="checkbox" id="design" name="recursos" value="Design">
+                    Design
+                </label>
+            </div>
+            <div class="campo">
+                <label for="avaliacao">Avaliação Escrita</label>
+                <textarea id="avaliacao" name="avaliacao" rows="6"></textarea>
+            </div>
+            <div class="campo">
+                <label for="usuario">Nome de Usuário</label>
+                <input type="text" id="usuario" name="usuario">
+            </div>
+            <div class="campo">
+                <input type="submit" value="Enviar Avaliação">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>© <span id="ano"></span> | Josimar dos Santos Paula</p>
+        <p>Última Modificação: <span id="modificado"></span></p>
+    </footer>
+</body>
+
+</html>
