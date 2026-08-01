@@ -1,11 +1,11 @@
 @media screen and (min-width:768px) {
 
     header h1 {
-        font-size: 2.2rem;
+        font-size: 2.3rem;
     }
 
     main {
-        max-width: 850px;
+        max-width: 900px;
     }
 
     form {
@@ -16,24 +16,46 @@
         margin-bottom: 2rem;
     }
 
+    fieldset {
+        padding: 1.5rem;
+    }
+
+    legend {
+        font-size: 1.1rem;
+    }
+
     select,
     input[type="text"],
     input[type="date"],
     textarea {
         font-size: 1rem;
-        padding: .85rem;
+        padding: .9rem;
     }
 
     textarea {
-        min-height: 160px;
+        min-height: 180px;
     }
 
     input[type="submit"] {
-        width: 250px;
+        width: 260px;
         display: block;
         margin: 0 auto;
-        font-size: 1.1rem;
         padding: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .confirmacao {
+        max-width: 650px;
+        margin: 2rem auto;
+        padding: 3rem;
+    }
+
+    .confirmacao h2 {
+        font-size: 2rem;
+    }
+
+    .confirmacao p {
+        font-size: 1.1rem;
     }
 
     footer {

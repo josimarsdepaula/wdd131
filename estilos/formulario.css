@@ -4,6 +4,8 @@
     --cor-fundo: #f4f4f4;
     --cor-borda: #d9d9d9;
     --cor-texto: #222222;
+    --cor-hover: #37205f;
+    --cor-sombra: rgba(0, 0, 0, .15);
 }
 
 * {
@@ -22,8 +24,8 @@ body {
 header {
     background: var(--cor-primaria);
     color: var(--cor-secundaria);
-    padding: 1.5rem;
     text-align: center;
+    padding: 1.5rem;
 }
 
 main {
@@ -33,21 +35,37 @@ main {
 }
 
 form {
-    background: #ffffff;
+    background: var(--cor-secundaria);
     padding: 1.5rem;
     border: 1px solid var(--cor-borda);
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+    box-shadow: 0 2px 8px var(--cor-sombra);
 }
 
 .campo {
     margin-bottom: 1.5rem;
 }
 
+fieldset {
+    border: 1px solid var(--cor-borda);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+legend {
+    padding: 0 .5rem;
+    font-weight: bold;
+}
+
 label {
     display: block;
     margin-bottom: .5rem;
     font-weight: bold;
+}
+
+fieldset label {
+    font-weight: normal;
+    margin: .4rem 0;
 }
 
 select,
@@ -59,6 +77,7 @@ textarea {
     border: 1px solid var(--cor-borda);
     border-radius: 5px;
     font-size: 1rem;
+    font-family: inherit;
 }
 
 textarea {
@@ -71,31 +90,63 @@ input[type="checkbox"] {
     margin-right: .5rem;
 }
 
-.campo label:has(input[type="radio"]),
-.campo label:has(input[type="checkbox"]) {
-    display: block;
-    font-weight: normal;
-    margin: .4rem 0;
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--cor-primaria);
+    outline-offset: 2px;
 }
 
 input[type="submit"] {
     width: 100%;
     padding: 1rem;
     background: var(--cor-primaria);
-    color: #ffffff;
+    color: var(--cor-secundaria);
     border: none;
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
+    transition: .3s;
 }
 
 input[type="submit"]:hover {
-    background: #37205f;
+    background: var(--cor-hover);
+}
+
+.confirmacao {
+    background: var(--cor-secundaria);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px var(--cor-sombra);
+}
+
+.confirmacao h2 {
+    margin-bottom: 1rem;
+    color: var(--cor-primaria);
+}
+
+.confirmacao p {
+    margin: .75rem 0;
+}
+
+.confirmacao a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 1.5rem;
+    background: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.confirmacao a:hover {
+    background: var(--cor-hover);
 }
 
 footer {
     background: var(--cor-primaria);
-    color: #ffffff;
+    color: var(--cor-secundaria);
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;

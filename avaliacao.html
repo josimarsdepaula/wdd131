@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Josimar dos Santos Paula">
-    <meta name="description" content="Página de confirmação do envio da avaliação de produto.">
-    <title>Avaliação Enviada</title>
+    <meta name="description"
+        content="Confirmação do envio da revisão de produto com contador de avaliações realizadas.">
+    <title>Revisão de Produto | Avaliação Enviada</title>
     <link rel="stylesheet" href="estilos/formulario.css">
     <link rel="stylesheet" href="estilos/formulario-grande.css">
     <script src="scripts/avaliacao.js" defer></script>
@@ -20,13 +21,12 @@
         <section class="confirmacao">
             <h2>Obrigado!</h2>
             <p>Sua avaliação foi enviada com sucesso.</p>
-            <p>Total de avaliações enviadas:</p>
-            <p id="contador"></p>
-            <p><a href="formulario.html">Enviar uma nova avaliação</a></p>
+            <p>Você já enviou <strong><span id="contador"></span></strong> avaliação(ões).</p>
+            <p><a href="formulario.html">Enviar outra avaliação</a></p>
         </section>
     </main>
     <footer>
-        <p>© <span id="ano"></span> | Josimar dos Santos Paula</p>
+        <p>&copy; <span id="ano"></span> | Josimar dos Santos Paula | Brasil</p>
         <p>Última Modificação: <span id="modificado"></span></p>
     </footer>
 </body>

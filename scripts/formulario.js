@@ -26,24 +26,14 @@ const produtos = [
     }
 ];
 
-const selectProduto = document.querySelector("#produto");
+const select = document.getElementById("produto");
 
-produtos.forEach(function (produto) {
-
+produtos.forEach((produto) => {
     const option = document.createElement("option");
-
     option.value = produto.id;
-
     option.textContent = produto.nome;
-
-    selectProduto.appendChild(option);
-
+    select.appendChild(option);
 });
 
-const ano = document.querySelector("#ano");
-
-ano.textContent = new Date().getFullYear();
-
-const modificado = document.querySelector("#modificado");
-
-modificado.textContent = document.lastModified;
+document.getElementById("ano").textContent = new Date().getFullYear();
+document.getElementById("modificado").textContent = document.lastModified;
