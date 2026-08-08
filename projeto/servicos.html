@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Josimar dos Santos Paula">
+    <meta name="description"
+        content="Conheça os serviços da CodeCase Technology em desenvolvimento web, sistemas, automação, inteligência artificial e consultoria em tecnologia.">
+    <title>CodeCase Technology | Serviços</title>
+    <link rel="stylesheet" href="estilos/projeto.css">
+    <link rel="stylesheet" href="estilos/projeto-grande.css">
+    <script src="scripts/projeto.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <a class="logo" href="index.html" aria-label="CodeCase Technology - Página inicial">
+                <span class="logo-principal">CodeCase</span>
+                <span class="logo-secundario">Technology</span>
+            </a>
+            <button class="menu-botao" type="button" aria-label="Abrir menu de navegação"
+                aria-expanded="false">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="empresa.html">Empresa</a></li>
+                    <li><a href="servicos.html" aria-current="page">Serviços</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="pagina-hero">
+            <div>
+                <p class="subtitulo">NOSSOS SERVIÇOS</p>
+                <h1>Soluções digitais para diferentes desafios.</h1>
+                <p>A CodeCase Technology combina desenvolvimento, automação e inteligência artificial para criar
+                    soluções alinhadas às necessidades de cada negócio.</p>
+            </div>
+        </section>
+        <section class="lista-servicos">
+            <div class="titulo-secao">
+                <p class="subtitulo">O QUE FAZEMOS</p>
+                <h2>Conheça nossas soluções</h2>
+                <p>Selecione uma categoria para encontrar a solução mais adequada à sua necessidade.</p>
+            </div>
+            <div class="filtros-servicos">
+                <button type="button" class="filtro-ativo" data-filtro="todos">Todos</button>
+                <button type="button" data-filtro="desenvolvimento">Desenvolvimento</button>
+                <button type="button" data-filtro="automacao">Automação</button>
+                <button type="button" data-filtro="inteligencia">Inteligência Artificial</button>
+                <button type="button" data-filtro="consultoria">Consultoria</button>
+            </div>
+            <div id="lista-servicos" class="cards-servicos"></div>
+            <p id="mensagem-servicos" class="mensagem-servicos"></p>
+        </section>
+        <section class="chamada">
+            <div>
+                <h2>Não encontrou o que procura?</h2>
+                <p>Cada projeto possui necessidades diferentes. Entre em contato e conte-nos o que você precisa.</p>
+                <a class="botao botao-secundario" href="contato.html">Falar sobre meu projeto</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="rodape-conteudo">
+            <div>
+                <a class="logo" href="index.html">
+                    <span class="logo-principal">CodeCase</span>
+                    <span class="logo-secundario">Technology</span>
+                </a>
+                <p>Soluções em tecnologia para transformar ideias em resultados.</p>
+            </div>
+            <div>
+                <h2>Navegação</h2>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="empresa.html">Empresa</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Contato</h2>
+                <p>CodeCase Technology</p>
+                <p>Curitiba, Paraná, Brasil</p>
+            </div>
+        </div>
+        <div class="rodape-final">
+            <p>&copy; <span id="ano"></span> CodeCase Technology. Todos os direitos reservados.</p>
+            <p>Última modificação: <span id="modificado"></span></p>
+            <p><a href="referencias.html">Referências</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

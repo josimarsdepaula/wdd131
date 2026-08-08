@@ -1,0 +1,104 @@
+@media screen and (min-width:768px) {
+    .cabecalho {
+        padding: 1rem 2rem;
+    }
+
+    .menu-botao {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    nav a {
+        padding: .5rem 0;
+    }
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 3.5rem 2rem;
+        gap: 3rem;
+    }
+
+    .hero h1,
+    .pagina-hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero-imagem img {
+        width: 100%;
+        max-height: 420px;
+        object-fit: cover;
+    }
+
+    .apresentacao,
+    .servicos-destaque,
+    .lista-servicos,
+    .portfolio,
+    .valores,
+    .contato-area {
+        padding: 4rem 2rem;
+    }
+
+    .apresentacao {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .cards-servicos,
+    .cards-valores {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cards-portfolio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .conteudo-duplo {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 4rem 2rem;
+    }
+
+    .pagina-hero {
+        padding: 4rem 2rem;
+    }
+
+    .pagina-hero h1 {
+        max-width: 850px;
+    }
+
+    .pagina-hero p:not(.subtitulo) {
+        max-width: 750px;
+    }
+
+    .contato-area {
+        grid-template-columns: 1fr 1.2fr;
+        align-items: start;
+    }
+
+    .formulario-contato {
+        padding: 2rem;
+    }
+
+    .rodape-conteudo {
+        grid-template-columns: 2fr 1fr 1fr;
+        padding: 3rem 2rem;
+    }
+
+    .chamada {
+        padding: 4rem 2rem;
+    }
+
+    .chamada h2 {
+        font-size: 2.3rem;
+    }
+}
