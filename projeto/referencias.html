@@ -7,41 +7,95 @@
     <meta name="author" content="Josimar dos Santos Paula">
     <meta name="description" content="Referências e fontes utilizadas no desenvolvimento do site CodeCase Technology.">
     <title>CodeCase Technology | Referências</title>
+    <link rel="stylesheet" href="estilos/projeto.css">
+    <link rel="stylesheet" href="estilos/projeto-grande.css">
+    <script src="scripts/projeto.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Referências</h1>
+        <div class="cabecalho">
+            <a class="logo" href="index.html" aria-label="CodeCase Technology - Página inicial">
+                <span class="logo-principal">CodeCase</span>
+                <span class="logo-secundario">Technology</span>
+            </a>
+            <button class="menu-botao" type="button" aria-label="Abrir menu de navegação"
+                aria-expanded="false">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="empresa.html">Empresa</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
-            <h2>Fontes de conteúdo</h2>
-            <p>Os textos institucionais apresentados neste site foram produzidos para fins acadêmicos e representam o
-                conceito da CodeCase Technology.</p>
+        <section class="pagina-hero">
+            <div>
+                <p class="subtitulo">TRANSPARÊNCIA</p>
+                <h1>Referências</h1>
+                <p>Fontes e recursos utilizados no desenvolvimento do site CodeCase Technology.</p>
+            </div>
         </section>
-        <section>
-            <h2>Imagens</h2>
-            <ul>
-                <li>As imagens utilizadas no projeto foram selecionadas para representar visualmente os serviços e
-                    soluções apresentados pela CodeCase Technology.</li>
-                <li>As fontes e créditos específicos das imagens utilizadas serão identificados conforme a origem de
-                    cada arquivo.</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Recursos de desenvolvimento</h2>
-            <ul>
-                <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">MDN Web Docs — HTML</a></li>
-                <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">MDN Web Docs — CSS</a></li>
-                <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">MDN Web Docs — JavaScript</a></li>
-                <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Window/localStorage">MDN Web Docs —
-                        localStorage</a></li>
-            </ul>
-        </section>
+        <div class="referencias-conteudo">
+            <section>
+                <h2>Fontes de conteúdo</h2>
+                <p>Os textos institucionais apresentados neste site foram produzidos para fins acadêmicos e representam o
+                    conceito da CodeCase Technology.</p>
+            </section>
+            <section>
+                <h2>Imagens</h2>
+                <ul>
+                    <li>As imagens utilizadas no projeto foram selecionadas para representar visualmente os serviços e
+                        soluções apresentados pela CodeCase Technology.</li>
+                    <li>As imagens foram geradas com inteligência artificial para este projeto acadêmico.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Recursos de desenvolvimento</h2>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">MDN Web Docs — HTML</a></li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">MDN Web Docs — CSS</a></li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">MDN Web Docs — JavaScript</a></li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Window/localStorage">MDN Web Docs —
+                            localStorage</a></li>
+                </ul>
+            </section>
+        </div>
     </main>
     <footer>
-        <p><a href="index.html">Voltar para a CodeCase Technology</a></p>
-        <p>&copy; 2026 CodeCase Technology. Todos os direitos reservados.</p>
+        <div class="rodape-conteudo">
+            <div>
+                <a class="logo" href="index.html">
+                    <span class="logo-principal">CodeCase</span>
+                    <span class="logo-secundario">Technology</span>
+                </a>
+                <p>Soluções em tecnologia para transformar ideias em resultados.</p>
+            </div>
+            <div>
+                <h2>Navegação</h2>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="empresa.html">Empresa</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Contato</h2>
+                <p>CodeCase Technology</p>
+                <p>Curitiba, Paraná, Brasil</p>
+            </div>
+        </div>
+        <div class="rodape-final">
+            <p>&copy; <span id="ano"></span> CodeCase Technology. Todos os direitos reservados.</p>
+            <p>Última modificação: <span id="modificado"></span></p>
+            <p><a href="index.html">Voltar para a CodeCase Technology</a></p>
+        </div>
     </footer>
 </body>
 

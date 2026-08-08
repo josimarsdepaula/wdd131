@@ -216,13 +216,6 @@ main {
     margin-bottom: 2rem;
 }
 
-.titulo-secao .subtitulo,
-.apresentacao .subtitulo,
-.conteudo-duplo .subtitulo,
-.contato-informacoes .subtitulo {
-    color: var(--cor-secundaria);
-}
-
 .titulo-secao h2 {
     color: var(--cor-principal);
 }
@@ -269,10 +262,6 @@ main {
 .pagina-hero>div {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.pagina-hero .subtitulo {
-    color: var(--cor-secundaria);
 }
 
 .conteudo-duplo {
@@ -351,7 +340,7 @@ main {
 
 .categoria {
     margin-bottom: .5rem;
-    color: var(--cor-secundaria) !important;
+    color: var(--cor-secundaria);
     font-size: .75rem;
     font-weight: 700;
     letter-spacing: .08rem;
@@ -518,6 +507,39 @@ footer a:focus {
 .rodape-final p {
     margin: .3rem 0;
     font-size: .9rem;
+}
+
+.referencias-conteudo {
+    display: grid;
+    gap: 1.2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.referencias-conteudo section {
+    padding: 1.5rem;
+    background: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px var(--cor-sombra);
+}
+
+.referencias-conteudo h2 {
+    margin-bottom: .8rem;
+    color: var(--cor-principal);
+}
+
+.referencias-conteudo ul {
+    padding-left: 1.2rem;
+}
+
+.referencias-conteudo li + li {
+    margin-top: .6rem;
+}
+
+.referencias-conteudo a {
+    color: var(--cor-secundaria);
 }
 
 @media (min-width:600px) {
