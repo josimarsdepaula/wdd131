@@ -4,8 +4,8 @@ contador++;
 
 localStorage.setItem("contadorAvaliacoes", contador);
 
-document.getElementById("contador").textContent = contador;
+document.querySelector("#contador").textContent = contador;
 
-document.getElementById("ano").textContent = new Date().getFullYear();
+document.querySelector("#ano").textContent = new Date().getFullYear();
 
-document.getElementById("modificado").textContent = document.lastModified;
+document.querySelector("#modificado").textContent = document.lastModified;
